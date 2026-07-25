@@ -1,2 +1,2 @@
-# Wildires_EFFIS_methodology_EU
+# The Age of Megafire
 
