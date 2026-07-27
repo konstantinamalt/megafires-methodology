@@ -300,7 +300,7 @@
 
     <p>We downloaded Eurostat’s official 2024 NUTS boundaries from its <a href="https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics" target="_blank" rel="noopener noreferrer">GISCO geographical database</a>, using the regional polygon dataset at the 1:1 million scale. Eurostat provides these files in several coordinate reference systems (CRSs), the mathematical frameworks used to position geographic data on a map. We used EPSG:3035, a European projection measured in metres, and transformed the EFFIS fire polygons into the same system. This step is essential: if two datasets use different coordinate systems, their boundaries may not align correctly and area calculations may be wrong.</p>
 
-    <p>We used the 2024 NUTS boundaries consistently across the entire 2015–2025 period, allowing fires from different years to be compared using the same regional geography.</p>
+    <p>We used the 2024 NUTS boundaries consistently across the entire 2015-2025 period, allowing fires from different years to be compared using the same regional geography.</p>
 
     <p>The analysis was done in Python using the GeoPandas library rather than desktop mapping software such as QGIS. Like QGIS, GeoPandas allowed us to intersect thousands of fire and regional polygons, divide fires that crossed regional boundaries and calculate the area of each resulting section. Its main advantage is that the entire workflow can be automated and easily repeated.</p>
 
